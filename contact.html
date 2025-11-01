@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="contact-products">
+        <div class="contact-hero">
+            <div class="logo">
+                <img src="images/logo-files.png" alt="Go to Home" style="cursor:pointer"
+                    onclick="window.location.href='index.html'">
+            </div>
+            <div class="nav_container">
+                <nav>
+                    <ul class="nav_links">
+                        <a href="index.html">HOME</a>
+                        <a href="products.html">PRODUCTS</a>
+                        <a href="contact.html">CONTACT</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>FORMULARIO DE CONTACTO</h2>
+        </section>
+        <!-- Form Section -->
+        <section class="contact-layout">
+            <div class="container">
+                <!-- Ilustración SVG -->
+                <div class="illustration-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 300 300"
+                        preserveAspectRatio="xMidYMid meet">
+                        <!-- Fondo blanco con borde azul -->
+                        <rect width="100%" height="100%" fill="#ffffff" rx="16" ry="16" />
+                        <rect x="1" y="1" width="98%" height="98%" fill="none" stroke="#0056b3" stroke-width="2" rx="16"
+                            ry="16" />
+
+                        <!-- Personaje -->
+                        <circle cx="80" cy="120" r="20" fill="#0056b3" />
+                        <rect x="60" y="140" width="40" height="70" rx="8" fill="#0056b3" />
+                        <rect x="70" y="100" width="20" height="40" rx="4" fill="#0056b3" />
+                        <path d="M60 210 L70 200 L80 210" stroke="#0056b3" stroke-width="4" fill="none" />
+                        <path d="M90 210 L100 200 L110 210" stroke="#0056b3" stroke-width="4" fill="none" />
+
+                        <!-- Computadora / Pantalla -->
+                        <rect x="120" y="100" width="140" height="100" rx="8" fill="#e6f0fa" />
+                        <rect x="130" y="110" width="120" height="20" rx="4" fill="#0056b3" />
+                        <rect x="130" y="140" width="120" height="10" rx="3" fill="#0056b3" />
+                        <rect x="130" y="160" width="100" height="10" rx="3" fill="#0056b3" />
+
+                        <!-- Iconos flotantes -->
+                        <!-- Engranaje -->
+                        <circle cx="180" cy="70" r="15" fill="none" stroke="#0056b3" stroke-width="2" />
+                        <path
+                            d="M180 55 L180 65 M190 65 L180 65 M180 65 L180 75 M170 75 L180 75 M180 75 L180 85 M190 85 L180 85 M180 85 L180 95 M170 95 L180 95"
+                            stroke="#0056b3" stroke-width="2" fill="none" />
+
+                        <!-- Llave -->
+                        <circle cx="240" cy="90" r="12" fill="none" stroke="#0056b3" stroke-width="2" />
+                        <path
+                            d="M235 90 C235 87 238 85 240 85 C242 85 245 87 245 90 L245 95 C245 97 243 99 240 99 C237 99 235 97 235 95 Z"
+                            fill="#0056b3" />
+                        <line x1="240" y1="99" x2="240" y2="105" stroke="#0056b3" stroke-width="2" />
+
+                        <!-- Candado en maceta -->
+                        <rect x="220" y="210" width="40" height="20" rx="4" fill="#0056b3" />
+                        <rect x="225" y="200" width="30" height="15" rx="3" fill="#0056b3" />
+                        <circle cx="240" cy="190" r="10" fill="#0056b3" />
+                        <path d="M235 190 L245 190 M240 185 L240 195" stroke="white" stroke-width="1.5" />
+                        <path d="M230 215 L235 225 L245 225 L250 215" fill="#0056b3" />
+                        <path d="M235 220 L245 220" stroke="white" stroke-width="1.5" />
+
+                        <!-- Bocadillo de mensaje -->
+                        <path d="M100 40 L120 40 L120 50 L100 50 Z" fill="none" stroke="#0056b3" stroke-width="2"
+                            stroke-dasharray="4 4" />
+                        <circle cx="105" cy="45" r="2" fill="#0056b3" />
+                        <circle cx="110" cy="45" r="2" fill="#0056b3" />
+                        <circle cx="115" cy="45" r="2" fill="#0056b3" />
+
+                        <!-- Hojas decorativas -->
+                        <path d="M40 220 Q30 230 25 240 Q20 250 30 255" fill="none" stroke="#0056b3" stroke-width="2" />
+                        <path d="M50 215 Q60 225 65 235 Q70 245 60 250" fill="none" stroke="#0056b3" stroke-width="2" />
+                    </svg>
+                </div>
+
+                <!-- Formulario -->
+                <div class="form-card">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <div class="input-with-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4z" />
+                                </svg>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <div class="input-with-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.582l-1.271-.762L1 12.114v.762l6.729-4.035L15 13.114v-.73z" />
+                                </svg>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <div class="input-with-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje (opcional)</label>
+                            <textarea id="message" name="message" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M15.854.146a.5.5 0 0 1 .146.354v8a.5.5 0 0 1-.854.354L11 5.354V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5L12.646.146a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708 0L11 4.646V8.5a.5.5 0 0 1-.854.354L6 4.354V1a.5.5 0 0 1 .854-.354L10.5 4.293z" />
+                            </svg>
+                            ENVIAR MENSAJE
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+        <p>Copyright © 2025 - Better Comunication® - All rights reserved</p>
+    </footer>
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/51990986012?text=Hola%20quisiera%20más%20información%20sobre%20sus%20servicios"
+        class="whatsapp-float" target="_blank" aria-label="Chatea con nosotros en WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+</body>
+
+</html>
